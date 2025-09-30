@@ -3,10 +3,11 @@ on:
   push:
     branches: [main]  # 当 main 分支有推送时触发
 jobs:
-  build:
+  job1:
     runs-on: ubuntu-latest  # 运行在 Ubuntu 环境
     steps:
-      - name: step0
-        run: pwd  
-      - name: step1
-        run: python --version
+      - run: pwd  
+  job2:
+    runs-on: ubuntu-latest  # 运行在 Ubuntu 环境
+    steps:
+      - run: python --version
