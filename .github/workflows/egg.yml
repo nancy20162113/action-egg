@@ -6,5 +6,7 @@ jobs:
   build:
     runs-on: ubuntu-latest  # 运行在 Ubuntu 环境
     steps:
-      - name: Print Message
-        run: echo "Hello from GitHub Actions!"  # 执行打印命令
+      - name: step0
+        run: pwd  
+      - name: step0
+        run: ls
